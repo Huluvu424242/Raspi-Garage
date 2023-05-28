@@ -3,7 +3,8 @@ name: Site Generierung und Push
 on:
   push:
     branches:
-      - 'master'
+      # - 'master'
+      - 'no'
   workflow_dispatch: {}
 
 jobs:
@@ -23,6 +24,7 @@ jobs:
       run: |
         git clone https://github.com/${GITHUB_REPOSITORY}.git
         cd `ls -d */`
+        git checkout ${GITHUB_REF_NAME}
         rm -rf docs/*
         mkdir -p ~/.m2
         echo "<settings><servers><server><id>github</id><username>OWNER</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
