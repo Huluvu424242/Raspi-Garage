@@ -7,6 +7,7 @@
     <version>Ausgabe 1.0.0-SNAPSHOT</version>
     <name>Raspi-Garage</name>
     <description>Tipps, Hinweise und Tutorials zur Arbeit mit dem Raspberry Pi</description>
+    <inceptionYear>2022</inceptionYear>
 
     <properties>
         <maven.version>3.9.1</maven.version>
@@ -188,4 +189,9 @@
             </build>
         </profile>
     </profiles>
+
+    <organization>
+        <name>PIUG</name>
+        <url>https://github.com/PIUGroup</url>
+    </organization>
 </project>
