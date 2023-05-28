@@ -2,6 +2,8 @@ name: Site Generierung und Push
 
 on:
   push:
+    branches:
+      - 'master'
   workflow_dispatch: {}
 
 jobs:
